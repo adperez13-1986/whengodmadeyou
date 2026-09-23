@@ -1,0 +1,4 @@
+# Weebly account export: contains email addresses and login IPs. Never publish.
+export/
+tools/mirror.log
+.DS_Store
