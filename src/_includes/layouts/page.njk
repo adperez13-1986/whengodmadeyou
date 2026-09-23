@@ -1,0 +1,3 @@
+{% extends "layouts/base.njk" %}
+{% set activeNav = (nav | findBy("url", page.url)).id %}
+{% set pageTitle = title %}

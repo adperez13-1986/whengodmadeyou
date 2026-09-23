@@ -1,0 +1,9 @@
+---
+title: "“Shake, shake, shake” and Thank you, Lord! Yanah is gaining weight na!!"
+date: "2018-04-16T12:00:00"
+weebly_id: "952510212385635234"
+weebly_html: |2-
+          <div class="paragraph" style="text-align:left;">Thank You, Lord for this day.<br /><br />Yanah is 19 months old na. Ang bilis ng mga araw &#128517;.<br />Yung balak ko na i-stop na ang breastfeeding journey ko ay mukhang malapit na nga. <br /><br /><br /></div>  <div>  <!--more--></div>  <div class="paragraph" style="text-align:left;"><font color="#3e3e3e"><span style="-webkit-text-size-adjust: 100%; background-color: rgba(255, 255, 255, 0);">Nakakaiyak isipin na ung special journey ko na &lsquo;to ay mukhang malapit na.<br /><br />Lately, panay na ang hingi n&rsquo;ya ng milk. May time na as in nagmamakaawa siya. Yung tono n&rsquo;ya habang sinasabi na, &ldquo;shake shake shake&rdquo; (yan ang tawag n&rsquo;ya kapag hihingi sya ng milk. Natandaan n&rsquo;ya yung laging sinasabi ng Tatay Fred kapag ipagagawa na siya ng milk nya.)<br /><br />Kaninang umaga, pagkagising mo eh,, agad sabi mo ay &ldquo;shake shake shake&rdquo;. Tapos after mo namang maubos eh sasabihin mo ay &ldquo;no more&rdquo;. ( Ang dami mo ng alam din na salita. Praise God!). Then, after mo maubos nga ang milk eh sa akin naman ikaw maglalatch. Hehe..<br /><br />Nasasabi mo na din ang &ldquo;ayaw&rdquo; kapag ayaw mo na nga. <br /><br />Chineck ko ang weight mo today, and mukhang may itinaas na. From 9.2kgs noong last month siguro yun. Now is 9.7kg!! <br />Thank you, Lord. Hindi ganoong kabigat pero getting there &#128517;&#128517;</span></font><br /></div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="/uploads/1/1/3/6/113684273/p541.png" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>
+
+
+---

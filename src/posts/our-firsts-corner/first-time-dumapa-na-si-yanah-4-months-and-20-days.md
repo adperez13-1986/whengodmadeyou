@@ -1,0 +1,9 @@
+---
+title: "First time - Dumapa na si Yanah @ 4 months and 20 days"
+date: "2017-02-02T12:00:00"
+weebly_id: "452774113849494662"
+weebly_html: |2-
+          <div class="paragraph">Thank you, Lord!</div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="/uploads/1/1/3/6/113684273/img-8645_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="/uploads/1/1/3/6/113684273/img-8659_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left"> <a> <img src="/uploads/1/1/3/6/113684273/img-8676_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="/uploads/1/1/3/6/113684273/img-8671_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="/uploads/1/1/3/6/113684273/img-8672_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>
+
+
+---

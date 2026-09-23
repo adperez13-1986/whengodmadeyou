@@ -1,0 +1,13 @@
+{
+  "name": "whengodmadeyou",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "markdown-it": "^14.1.0"
+  }
+}

@@ -1,33 +1,51 @@
-# When God Made You — archive
+# When God Made You
 
-Grace's Weebly site (`whengodmadeyou.weebly.com`), saved before Weebly deleted it.
-Mirrored 2026-09-23 from the live site.
+Grace's blog, moved off Weebly in September 2026 and rebuilt so she can keep writing.
 
-Live copy: https://adperez13-1986.github.io/whengodmadeyou/ (GitHub Pages, deployed from `site/` by `.github/workflows/deploy.yml` on every push to `main`).
+- Site: https://adperez13-1986.github.io/whengodmadeyou/
+- Editor: https://adperez13-1986.github.io/whengodmadeyou/admin/
 
-## View it
+## Writing a post
 
-Open `site/index.html` in a browser, or serve it:
+1. Open the editor and sign in (see below; it only has to be done once per browser).
+2. Pick the blog in the left menu (Motherhood/Parenting, Yuri, ...) and press **New Post**.
+3. Fill in the title and date, write the post, and add photos with the image button. Photos are shrunk automatically before upload.
+4. Press **Save**. The site updates about two minutes later.
+
+Turn on **Draft** to save a post without publishing it. Old posts can be edited too. Their original Weebly layout sits in the "Original post from Weebly" field as HTML, so edit that carefully. Text written in **Post** appears below it.
+
+## Signing in to the editor (one-time setup)
+
+The editor saves by committing to this repository, so it needs a GitHub access token:
+
+1. On GitHub (as the repo owner): Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token.
+   - Repository access: **Only select repositories** → `whengodmadeyou`
+   - Permissions → Repository permissions → **Contents: Read and write**
+   - Pick the longest expiry offered, and note the date.
+2. In the browser Grace writes from, open the editor, choose **Sign In Using Access Token** and paste the token. It stays saved in that browser.
+
+When the token expires, make a new one and sign in again. The token is scoped to this one repository, so it can't touch anything else.
+Saves show up in the history as commits by the token's owner.
+
+## How it works
+
+- `src/posts/<blog>/<slug>.md`: one file per post, published at `/<blog>/<slug>.html`, the same URLs Weebly used.
+- `src/pages/`: the standalone pages (home, About Me, ...), kept as Weebly's HTML. Edit these in the repo, not the editor.
+- `src/_weebly/`: each page's banner and each blog's sidebar and surrounding content, carried over verbatim.
+- `src/_includes/`: the page layout (Weebly's markup and theme), and the post and blog templates.
+- `eleventy.config.js`: builds the listing pages (10 per page), month archives, category pages, RSS feeds and redirects from old Weebly links. It also rewrites links to be relative, so the site works under any URL.
+- `src/admin/`: the editor ([Sveltia CMS](https://github.com/sveltia/sveltia-cms), pinned to a version in `index.html`).
+- `.github/workflows/deploy.yml`: every push to `main` builds the site with [Eleventy](https://www.11ty.dev/) and publishes it to GitHub Pages.
+
+Run it locally:
 
 ```sh
-cd site && python3 -m http.server 8000   # http://localhost:8000
+npm install
+npm start        # http://localhost:8080
 ```
 
-The `site/` folder is plain static HTML, so it can go on any static host (GitHub Pages, Netlify, Cloudflare Pages) as-is.
+## History
 
-## What's here
-
-- `site/` — the full site: 459 pages (every blog post, archive and category page) and 1,350 photos under `site/uploads/`.
-- `export/` — the original "Download My Data" zip from Weebly. It holds the posts as raw HTML in CSV files, plus account data (her email, login IPs). **Don't publish this folder.**
-- `tools/mirror.py` — the crawler that built `site/`. `tools/cleanup.py` — the post-processing pass that removes what can't work offline.
-
-## What doesn't work any more
-
-- Leaving new comments, and the share buttons (both removed). Existing comments are still shown.
-- The embedded Facebook feed (SocialStream) and YouTube videos load from those services, so they need an internet connection.
-- Some theme scripts still load extras from Weebly's shared CDN (`editmysite.com`). All the text and photos are local and display without them.
-
-## Known gaps
-
-About 170 photos listed in the export no longer exist on Weebly's servers (they return 404; see `tools/failures.txt`).
-Almost all are old versions or drafts that no page uses. Only one photo that a page still shows is missing, and it was already broken on the live site.
+- `export/` (not in git): the original Weebly "Download My Data" zip. It holds her email and login IP addresses. **Never publish it.**
+- `tools/`: the one-off migration scripts. `mirror.py` and `cleanup.py` copied the live Weebly site; `extract.py` and `make_layout.py` turned that copy into `src/`. The mirror itself was removed after the rebuild; it's in git history at commit `75237b2`, if the scripts ever need to be rerun.
+- Known gaps from Weebly: about 170 old photos the export lists were already gone from Weebly's servers (`tools/failures.txt`); none are used by a published page except one already broken on the live site.

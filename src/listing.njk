@@ -1,0 +1,29 @@
+---
+pagination:
+  data: collections.listings
+  size: 1
+  alias: listing
+permalink: "{{ listing.url }}"
+eleventyExcludeFromCollections: true
+---
+{% extends "layouts/blog.njk" %}
+{% from "partials/post.njk" import post %}
+{% set blogInfo = listing.blog %}
+{% set banner = blogInfo.banner %}
+{% set bodyClass = blogInfo.bodyClass | replace("BLOGKIND", "wsite-blog-index") %}
+{% set activeNav = (nav | findBy("url", "/" + blogInfo.key + ".html")).id %}
+{% set pageTitle = listing.title %}
+{% set description = blogInfo.description if listing.kind == "index" and not listing.newer %}
+{% set keywords = blogInfo.keywords if listing.kind == "index" and not listing.newer %}
+{% block posts %}{% for item in listing.posts %}{{ post(item, false) }}{% endfor %}
+{%- if listing.older %}
+	<div class="blog-page-nav-previous">
+		<a href="{{ listing.older }}" class="blog-link">&lt;&lt;Previous</a>
+	</div>
+{% endif %}
+{%- if listing.newer %}
+	<div class="blog-page-nav-next">
+		<a href="{{ listing.newer }}" class="blog-link">Forward&gt;&gt;</a>
+	</div>
+{% endif %}
+{% endblock %}

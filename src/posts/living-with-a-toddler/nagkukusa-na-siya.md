@@ -1,0 +1,9 @@
+---
+title: "Nagkukusa na siya"
+date: "2019-12-11T12:00:00"
+weebly_id: "315431851321241825"
+weebly_html: |2-
+          <div class="paragraph"><span>Noong isang araw, gustong gusto ko magsulat kaso dinapuan ako ng katamaran! Hindi tuloy ako nakapagsulat.&nbsp; Haays.<br /><br />Anyways, andito kami ngayon ni Yanah sa Pilipinas kasi dito ako manganganak. 37 weeks na din ako. Malapit na at makikita na din namin si Yuri.&nbsp;Naghihintay kami for Yuri baby na lumabas! Habang si Daddy naman ay nasa Singapore.&nbsp;&nbsp;</span><br /><br /><span>Since Monday, nilalagnat si Yanah.&nbsp;</span><span>Sobrang nakakapagod kapag may sakit ang anak. Pero Praise God pa din. Kasi GOD IS GOOD all the time! Alam natin na nagyayari talaga ito at part ng paglaki nila.&nbsp;</span><br /><br />So hayun na nga. Nakakatuwang makita na nagkukusa na siya.&nbsp;Ate na talaga si Yanah. Thank you, Lord at hinahanda mo na siya sa new season na ito.&nbsp;<br /><br /><br />Anyways, nakakatuwa lang, kasi nakita ko kay Yanah, talagang nalaki na nga siya. Bukod sa "laki" na mejo natangkad na nga. Nagiging mas lalong matured na siya sa mga bagay bagay.&nbsp;<br /><br />Nagkukusa na siyang umihi ng kanya. Noong time na yun, nasa kwarto ako. Then bigla kong nakita siya na pumasok at binuksan ang "arinola". Sobrang natuwa ako kasi akala ko eh kung anong gagawin niya. Yun pala eh iihi siya. Hindi nagsabi or nagpaalam. Ginawa na lang niya ng kusa.&nbsp;<br /><br />Noong gabi, ibinalita ko sa kanyang Daddy.&nbsp;<br /><br />Nakakatuwa lang kasi hindi na iisang beses niya yung ginawa.&nbsp;<br /><br />Praise GOD!<br /><br />&#8203;</div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="/uploads/1/1/3/6/113684273/img-2155_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>
+
+
+---

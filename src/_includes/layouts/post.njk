@@ -1,0 +1,35 @@
+{% extends "layouts/blog.njk" %}
+{% from "partials/post.njk" import post %}
+{% set blogInfo = blogs | findBy("key", blog) %}
+{% set banner = blogInfo.banner %}
+{% set bodyClass = blogInfo.bodyClass | replace("BLOGKIND", "wsite-blog-post") %}
+{% set activeNav = (nav | findBy("url", "/" + blog + ".html")).id %}
+{% set pageTitle = title + " - " + site.title %}
+{% set ogTitle = title %}
+{% set postBody = (weebly_html or "") + content %}
+{% set ogDescription = postBody | plainText %}
+{% set ogImage = postBody | firstImage %}
+{% set self = { data: { title: title, weebly_id: weebly_id, weebly_html: weebly_html, comments: comments }, url: page.url, date: page.date, content: content, page: page } %}
+{% block posts %}{{ post(self, true) }}
+{%- if comments %}
+
+
+    <a name="comments" id="comments"></a>
+<div id="commentArea">
+	<div class="blog-comment-area">
+{%- for c in comments %}
+		<div class="blogCommentWrap {{ 'even' if loop.index0 % 2 == 0 else 'odd' }} blogCommentLevel0">
+			<div class="blogCommentHeading">
+				<div class="blogCommentHeadingInner">
+					<div class="blogCommentAuthor"><span class="name">{{ c.name }}</span></div>
+					<div class="blogCommentDate">{{ c.date }}</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="blogCommentText"><p>{{ c.html | safe }}</p></div>
+		</div>
+{%- endfor %}
+	</div>
+</div>
+{%- endif %}
+{% endblock %}

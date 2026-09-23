@@ -1,0 +1,45 @@
+{#- One post as Weebly renders it. `full` shows the whole post; otherwise the excerpt, if it has one. -#}
+{%- macro post(item, full) -%}
+{%- set excerpt = null if full else (item | postExcerpt) -%}
+{%- set count = (item.data.comments or []) | length -%}
+<div id="blog-post-{{ item.data.weebly_id or item.page.fileSlug }}" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="{{ item.url }}">{{ item.data.title }}</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		{{ item.date | blogDate }}
+	</span>
+
+			</p>
+			{%- if count %}
+			<p class="blog-comments">
+					<a href="{{ item.url }}#comments" class="blog-link">
+		{{ count }} Comment{{ "s" if count != 1 }}
+	</a>
+
+			</p>
+			{%- endif %}
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+{%- if excerpt %}
+{{ excerpt | safe }}
+<br/>
+		<div class="blog-read-more">
+			<a href="{{ item.url }}" class="blog-link">Read More</a>
+		</div>
+{%- else %}
+{{ item | postHtml | safe }}
+{%- endif %}
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>
+{%- endmacro -%}

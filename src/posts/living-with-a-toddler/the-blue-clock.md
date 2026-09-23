@@ -1,0 +1,9 @@
+---
+title: "\"The Blue Clock\""
+date: "2021-08-02T12:00:00"
+weebly_id: "247686846323192994"
+weebly_html: |2-
+          <div class="paragraph">So kagabi ay isa sa mahabang kwentuhan namin bago matulog.&nbsp;<br /><br />Bago kami matulog, isang mahabang kwentuhan muna.&nbsp;<br /><br />Isa sa napagusapan namin ay about sa dream daw nya. Dinescribe nya yung mga dream nya as "WEIRD DREAMS".&nbsp; It's so funny daw kasi all of her dreams are so weird. So,&nbsp; isa nga daw doon is yung blue clock na nasa sky. She tried to jump and jump.. and jump, but she cannot reach it.&nbsp;<br />Tapos, it keeps on ringing (alarming). And she don't know what happens next. But she remembers that Mommy and Daddy is not there. "That's so weird, Mommy!!" Sabay tawa!<br /><br />Then, tinanong nya ako, kung nanaginip din ba daw ako, sabi ko oo, weird din ang mga panaginip ko kako. Sabi nya, "REALLY!!??" "Tell me, tell me. please." So hayun, hanggang sa nagkwento na ako.. Then, sabi nya, "okay Mommy, I think I need to sleep so that I can dream again." Sabi ko, Yanah, "please always pray to Jesus to give you sweet dreams, Okay?" Okay, MOmmy."&nbsp;<br /><br />Nakakatuwa yung mga gantong moment. I always assure her na super excited ako to hear her stories,, as in super excited!! Kaya bago siya magkwento, agad nyang tatanungin muna. "Mommy, Daddy, are you super duper excited to hear my stories?"&nbsp;<br /><br />Thank you, Lord for this child. Ang dami kong realization everyday.&nbsp;<br />Sobrang halaga sa kanila yung TIME. And that weird dreams reminded me to spend more time as much as possible habang bata pa sila. Because, Yes, ang bilis ng panahon. And ang sama sa pakiramdam na dumaan lang yung time na yun.&nbsp;<br /><br />Let's make everyday a memories to share pagtanda natin :)&nbsp;<br /><br />We love you, Yanah!<br /></div>
+
+
+---

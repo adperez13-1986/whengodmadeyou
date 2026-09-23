@@ -1,0 +1,327 @@
+# Editor for When God Made You. Every save is a commit to main, which republishes the site.
+# One section per blog, matching the site's menu. Generated from src/_data/blogs.json.
+backend:
+  name: github
+  repo: adperez13-1986/whengodmadeyou
+  branch: main
+  auth_methods: [token]
+
+site_url: https://adperez13-1986.github.io/whengodmadeyou/
+display_url: https://adperez13-1986.github.io/whengodmadeyou/
+
+media_folder: src/uploads/posts
+public_folder: /uploads/posts
+
+# Phone photos are shrunk before upload so the site stays fast and the repo small.
+media_libraries:
+  all:
+    transformations:
+      raster_image:
+        format: webp
+        quality: 85
+        width: 2000
+        height: 2000
+
+collections:
+  - name: "our-journey-of-love"
+    label: "Our Journey of Love"
+    label_singular: Post
+    folder: src/posts/our-journey-of-love
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "living-with-a-toddler"
+    label: "Living with a toddler"
+    label_singular: Post
+    folder: src/posts/living-with-a-toddler
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: categories, label: Categories, widget: select, multiple: true, required: false, options: ["Yanah"] }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "motherhoodparenting"
+    label: "Motherhood/Parenting"
+    label_singular: Post
+    folder: src/posts/motherhoodparenting
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: categories, label: Categories, widget: select, multiple: true, required: false, options: ["Mom Life", "Motherhood", "Pregnancy Journey"] }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "homemaking"
+    label: "Homemaking"
+    label_singular: Post
+    folder: src/posts/homemaking
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "pregnancy-journey"
+    label: "Pregnancy Journey"
+    label_singular: Post
+    folder: src/posts/pregnancy-journey
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "our-firsts-corner"
+    label: "Our FIRSTS Corner"
+    label_singular: Post
+    folder: src/posts/our-firsts-corner
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "diys-mom"
+    label: "DIYs Mom"
+    label_singular: Post
+    folder: src/posts/diys-mom
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "lets-explore-asia--europe"
+    label: "Let's Explore (Asia & Europe)"
+    label_singular: Post
+    folder: src/posts/lets-explore-asia--europe
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "eat-out-yum"
+    label: "Eat Out, Yum!"
+    label_singular: Post
+    folder: src/posts/eat-out-yum
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }
+  - name: "yuri"
+    label: "Yuri"
+    label_singular: Post
+    folder: src/posts/yuri
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { name: draft, label: Draft, widget: boolean, default: false, required: false, hint: "While this is on, the post stays off the site." }
+      - { name: body, label: Post, widget: markdown, required: false }
+      - name: weebly_html
+        label: Original post from Weebly
+        widget: text
+        required: false
+        hint: "Only old posts have this. It is the post's original layout as HTML, shown above anything in Post. Edit with care."
+      - { name: weebly_id, label: Weebly ID, widget: hidden }
+      - name: comments
+        label: Comments from Weebly
+        widget: list
+        required: false
+        collapsed: true
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: date, label: Date, widget: string }
+          - { name: html, label: Comment, widget: text }

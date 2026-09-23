@@ -1,0 +1,18 @@
+{#- Weebly's blog page: content above the post list, the post column, the sidebar, content below. -#}
+{% extends "layouts/base.njk" %}
+{% block main %}{{ weebly.blogs[blogInfo.key].before | safe }}<table 
+	id="blogTable" 
+		class="wsite-not-footer" 
+	style="border: 0; width: 100%; table-layout: fixed" 
+>
+	<tr>
+	    <td valign="top">
+	        	<div id="{{ blogInfo.id }}-blog" class="blog-body" style="float: left;"> 
+		<div id="wsite-content">	{% block posts %}{% endblock %}
+<!-- bid: $blog_id --></div>
+	</div>
+
+	    </td>
+	        <td class="blog-sidebar" valign="top">{{ blogInfo | sidebar(collections.posts, weebly) | safe }}</td>
+	</tr>
+</table>{{ weebly.blogs[blogInfo.key].after | safe }}{% endblock %}

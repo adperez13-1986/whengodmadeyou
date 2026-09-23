@@ -1,0 +1,9 @@
+---
+title: "Pahulog style na pagtulog"
+date: "2021-09-04T12:00:00"
+weebly_id: "170245459630399285"
+weebly_html: |2-
+          <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="/uploads/1/1/3/6/113684273/img20210904065021_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:right"> <a> <img src="/uploads/1/1/3/6/113684273/img20210904071836_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div class="paragraph">Ewan ko nga ba sa dalawang eto, hindi naman dumadarecho ng hulog, pero trip talaga nila ang gumilid. Si Yuri gusto lagi nakalawit ang paa! hahahah<br /></div>  <div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;"> 	<table class="wsite-multicol-table"> 		<tbody class="wsite-multicol-tbody"> 			<tr class="wsite-multicol-tr"> 				<td class="wsite-multicol-col" style="width:37.550607287449%; padding:0 15px;"> 					 						  <div class="wsite-spacer" style="height:50px;"></div>   					 				</td>				<td class="wsite-multicol-col" style="width:7.1862348178138%; padding:0 15px;"> 					 						  <div class="wsite-spacer" style="height:50px;"></div>   					 				</td>				<td class="wsite-multicol-col" style="width:30.263157894737%; padding:0 15px;"> 					 						  <div class="wsite-spacer" style="height:50px;"></div>   					 				</td>				<td class="wsite-multicol-col" style="width:25%; padding:0 15px;"> 					 						  <div class="wsite-spacer" style="height:50px;"></div>   					 				</td>			</tr> 		</tbody> 	</table> </div></div></div>
+
+
+---
