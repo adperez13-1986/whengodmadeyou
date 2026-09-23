@@ -3,6 +3,8 @@
 Grace's Weebly site (`whengodmadeyou.weebly.com`), saved before Weebly deleted it.
 Mirrored 2026-09-23 from the live site.
 
+Live copy: https://adperez13-1986.github.io/whengodmadeyou/ (GitHub Pages, deployed from `site/` by `.github/workflows/deploy.yml` on every push to `main`).
+
 ## View it
 
 Open `site/index.html` in a browser, or serve it:
