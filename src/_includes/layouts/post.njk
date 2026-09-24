@@ -11,7 +11,7 @@
 {% set ogImage = postBody | firstImage %}
 {% set self = { data: { title: title, weebly_id: weebly_id, weebly_html: weebly_html, comments: comments }, url: page.url, date: page.date, content: content, page: page } %}
 {% block posts %}{{ post(self, true) }}
-{%- if comments %}
+{%- if comments and comments.length %}
 
 
     <a name="comments" id="comments"></a>
