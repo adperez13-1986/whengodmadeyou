@@ -41,7 +41,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
   eleventyConfig.ignores.add("src/_weebly/**");
   eleventyConfig.ignores.add("src/admin/**");
-  eleventyConfig.addPassthroughCopy({ "src/uploads": "uploads", "src/files": "files", "src/_cdn": "_cdn", "src/admin": "admin" });
+  eleventyConfig.addPassthroughCopy({ "src/uploads": "uploads", "src/files": "files", "src/_cdn": "_cdn", "src/admin": "admin", "src/assets": "assets" });
   eleventyConfig.addWatchTarget("src/_weebly/");
 
   // Nunjucks' selectattr can't compare values, so lookups get their own filters.

@@ -71,6 +71,7 @@ def main():
         "{% block main %}{{ content | safe }}{% endblock %}",
         raw(footer),
         raw(theme_js),
+        "\t<script src=\"/assets/tabs.js\"></script>\n",
         "\t</body>\n</html>\n",
     ])
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

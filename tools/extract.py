@@ -129,6 +129,32 @@ def post_content(block):
     return inner, False
 
 
+def slideshows_to_galleries(body):
+    """Weebly slideshows are drawn by Weebly's own JavaScript, which builds image paths that
+    break outside weebly.com. Replace each with Weebly's static image-gallery markup (4 across,
+    click to open the photo), which the theme's lightbox already handles."""
+    def convert(m):
+        gid = m.group(1)
+        images = json.loads(re.search(r"images:(\[.*?\])\}\)", m.group(0), re.S).group(1))
+        items = []
+        for n, im in enumerate(images):
+            url = "/uploads/" + im["url"].replace("\\/", "/")
+            ratio = im["height"] / im["width"] * 100
+            top = -((ratio - 75) / 2) / 75 * 100 if ratio > 75 else 0
+            items.append(
+                f"<div id='{gid}-imageContainer{n}' style='float:left;width:24.95%;margin:0;'>"
+                f"<div id='{gid}-insideImageContainer{n}' style='position:relative;margin:5px;'>"
+                f"<div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'>"
+                f"<div class='galleryInnerImageHolder'><a href='{url}' rel='lightbox[gallery{gid}]'>"
+                f"<img src='{url}' class='galleryImage' _width='{im['width']}' _height='{im['height']}' "
+                f"style='position:absolute;border:0;width:100%;top:{top:.0f}%;left:0%' /></a></div></div></div></div>")
+        return (f"<div id='{gid}-gallery' class='imageGallery' style='line-height: 0px; padding: 0; margin: 0'>"
+                + "".join(items)
+                + "<span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>\n</div>")
+    return re.sub(r"<div id='(\d+)-slideshow'></div>\s*<script type='text/javascript'>.*?wSlideshow\.render.*?</script>",
+                  convert, body, flags=re.S)
+
+
 def parse_comments(t):
     comments = []
     for m in re.finditer(r'<div class="blogCommentWrap.*?<div class="blogCommentOptions">', t, re.S):
@@ -278,6 +304,7 @@ def main():
             title = html.unescape(re.sub(r"<[^>]+>", "", re.search(r'class="blog-title-link blog-link"[^>]*>(.*?)</a>', block, re.S).group(1)).strip())
             d, m, y = map(int, re.search(r'<span class="date-text">\s*(\d+)/(\d+)/(\d+)', block).groups())
             body, _ = post_content(block)
+            body = slideshows_to_galleries(body)
             slug = os.path.basename(rel)[:-5]
             if "<!--BLOG_SUMMARY_END-->" in body:
                 body = body.replace("<!--BLOG_SUMMARY_END-->", "<!--more-->", 1)
